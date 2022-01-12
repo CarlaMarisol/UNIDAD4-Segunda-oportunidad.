@@ -1,0 +1,56 @@
+
+<html>
+    <head>
+	<title> CRUD </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src=" https://code.jquery.com/jquery-3.6.0.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+		
+    </head>
+
+    <body class="container">
+        <div class="mensaje-alerta">
+        </div>
+
+        <div class="jumbotron row ">
+            <h2> Veterinaria Dogtor </h2>
+
+
+            <div class="col-md-6">
+                <hr>
+                    <p class="modo"> <span class="glyphicon glyphicon-plus"></span>Agregar información</p>
+                <form id="vacas-form">
+                    <input  class="form-control" type="text" id="nombre" placeholder="Nombre">
+                    <input  class="form-control" type="text" id="raza" placeholder="Raza">
+                    <input  class="form-control" type="number" id="peso" placeholder="Peso en kg">
+                    <input  class="form-control" type="date" id="fecha_nacimiento" placeholder="Fecha de nacimiento">
+                
+                    <br>
+                    <input type="submit" class="btn btn-success" value="Guardar informacion">
+                </form>
+                <br>
+                <br>
+                <div id="numeroPerritos">
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <img style=" width:100%" src="vete.png" alt="" />
+            </div>
+
+        </div>
+
+
+        <br>
+        <br>
+        <table class="table" id="dbV-list">
+
+        </table>
+
+    </body>
+	<script type="text/javascript" src="app.js"></script>
+   
+</html>
